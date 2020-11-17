@@ -1,0 +1,24 @@
+{
+    "id": "E22E8F65",
+    "path": "C:/Users/ma060/Documents/egsummary/R/egsummary_addin.R",
+    "project_path": "R/egsummary_addin.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1605594784088.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "cursorPosition": "20,0",
+        "scrollLine": "8"
+    },
+    "folds": "178|46|705|2|\n",
+    "lastKnownWriteTime": 1605595166,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1605595166,
+    "read_only": false,
+    "read_only_alternatives": []
+}
