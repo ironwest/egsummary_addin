@@ -35,8 +35,7 @@
 #' @import dplyr
 #' @import shinyWidgets
 #' @import knitr
-#'
-#'
+
 egsummary_addin <- function(){
 
   choices_add_p_test <- c(
