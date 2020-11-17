@@ -1,23 +1,42 @@
-library(miniUI)
-library(gt)
-library(gtsummary)
-library(readr)
-library(magrittr)
-library(dplyr)
-library(shiny)
-library(openxlsx)
-library(shinycssloaders)
-library(shinyjs)
-library(shinyWidgets)
-library(purrr)
-library(stringr)
-library(tibble)
-library(tidyr)
-library(rlang)
-library(rmarkdown)
-library(flextable)
+# library(miniUI)
+# library(gt)
+# library(gtsummary)
+# library(readr)
+# library(magrittr)
+# library(dplyr)
+# library(shiny)
+# library(openxlsx)
+# library(shinycssloaders)
+# library(shinyjs)
+# library(shinyWidgets)
+# library(purrr)
+# library(stringr)
+# library(tibble)
+# library(tidyr)
+# library(rlang)
+# library(rmarkdown)
+# library(flextable)
 
-
+#' @importFrom magrittr %>%
+#' @importFrom shinyjs useShinyjs hide show
+#' @importFrom shinycssloaders withSpinner
+#' @importFrom gt gt_output render_gt
+#' @importFrom purrr map pmap map2_chr
+#' @importFrom stringr str_c str_glue
+#' @importFrom tibble enframe as_tibble
+#' @importFrom tidyr unnest
+#' @importFrom readr read_delim write_csv
+#' @importFrom rlang set_names
+#' @importFrom rmarkdown render
+#' @importFrom flextable as_flextable
+#' @import gtsummary
+#' @import miniUI
+#' @import shiny
+#' @import dplyr
+#' @import shinyWidgets
+#' @import knitr
+#'
+#'
 egsummary_addin <- function(){
 
   choices_add_p_test <- c(
@@ -685,7 +704,7 @@ egsummary_addin <- function(){
     output$dltable_word <- downloadHandler(
       filename = function() {"table1.docx"},
       content = function(file){
-        render("word_template.Rmd", output_file = file)
+        render( system.file("extdata","word_template.rmd", package="egsummaryAddin"), output_file = file)
       }
     )
 
@@ -700,7 +719,7 @@ egsummary_addin <- function(){
     output$dltable_html <- downloadHandler(
       filename = function(){"table1.html"},
       content = function(file){
-        render("html_template.Rmd", output_file = file)
+        render( system.file("extdata","html_template.rmd", package="egsummaryAddin"), output_file = file)
       }
     )
   }
