@@ -36,7 +36,7 @@
 #' @import shinyWidgets
 #' @import knitr
 
-egsummary_addin <- function(){
+tbl_summary_addin <- function(){
 
   choices_add_p_test <- c(
     "t.test","aov","wilcox.test","kruskal.test",

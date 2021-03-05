@@ -1,4 +1,4 @@
 Name: egsummary
 Description: Addin version of egsummary shiny application
-Binding: egsummary_addin
+Binding: tbl_summary_addin
 Interactive: true
